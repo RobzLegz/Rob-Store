@@ -15,23 +15,25 @@ const CartProduct = ({id, title, price, rating, image, size}) => {
 
     return (
         <div className="cart-product-container">
-            <img src={image} alt="checkout image" className="cart-image"/>
+            <img src={image} alt="cart-image" className="cart-image"/>
             <div className="cart-product-info">
                 <p className="cart-product-title">{title}</p>
-                <p className="cart-product-price">
-                    <small>$</small>
-                    <strong>{price}</strong>
-                </p>
-                <p className="cart-product-price">
-                    <small>size:</small>
-                    <strong>{size}</strong>
-                </p>
-                <div className="checkout-product-rating">
+                <div className="size-price-container-cart">
+                    <p className="cart-product-price">
+                        <small>$</small>
+                        <strong>{price}</strong>
+                    </p>
+                    <p className="cart-product-price">
+                        <small>size:</small>
+                        <strong>{size}</strong>
+                    </p>
+                </div>
+                <div className="cart-product-rating">
                     {Array(rating).fill().map((_, i) => (
                         <p>⭐</p>
                     ))}
                 </div>
-                <button onClick={removeBasketItem}>Remove from Cart</button>
+                <button className="remove-cart-button" onClick={removeBasketItem}>Remove from Cart</button>
             </div>
             
         </div>
