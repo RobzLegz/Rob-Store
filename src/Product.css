@@ -44,3 +44,14 @@
 .product-info {
   margin-top: 15px;
 }
+.price-size-container {
+  display: flex;
+  justify-content: space-between;
+}
+.product-price {
+  align-items: center;
+  display: flex;
+}
+.sizenumber {
+  margin-left: 5px;
+}

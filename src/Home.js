@@ -16,6 +16,7 @@ const Home = () => {
                         id="346463646"
                         title="DC TONIK SNEAKERS"
                         price={11.99}
+                        size={43}
                         rating={3}
                         image={DcSneakers}
                     />
@@ -23,6 +24,7 @@ const Home = () => {
                         id="64436564"
                         title="ADIDAS GRAND COURT SE"
                         price={19.99}
+                        size={44}
                         rating={3}
                         image={AdidasSneakers}
                     />
@@ -30,6 +32,7 @@ const Home = () => {
                         id="2733786438"
                         title="BLUE OLD SCHOOL VANS"
                         price={5.00}
+                        size={43}
                         rating={1}
                         image={BlueVans}
                     />
