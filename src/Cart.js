@@ -3,18 +3,17 @@ import "./Cart.css";
 import CartProduct from './CartProduct';
 import { useStateValue } from './StateProvider';
 import Subtotal from "./Subtotal";
+import CartHeaderImg from "./resources/grailify-wzgqLjz09jA-unsplash.jpg"
 
 const Checkout = () => {
 
     const [{basket}, dispatch] = useStateValue();
 
     return (
-        <div className="checkout-container">
-            <div className="checkout-left">
-                <img src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg" alt="ad" className="checkout-ad"/>
-                <div>
-                    <h2 className="checkout-title">Your shopping basket</h2>
-                </div>
+        <div className="cart-container">
+            <div className="cart-left">
+                <img src={CartHeaderImg} alt="cart header image" className="cart-header-img"/>
+                <h2 className="cart-title">Your Shopping Cart</h2>
                 {basket.map(item => (
                     <CartProduct 
                         id={item.id}
@@ -25,7 +24,7 @@ const Checkout = () => {
                     />
                 ))}
             </div>
-            <div className="checkout-right">
+            <div className="cart-right">
                 <Subtotal />
             </div>
         </div>

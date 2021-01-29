@@ -16,7 +16,7 @@ const Header = () => {
                 <Link to="/cart">
                     <div className="header-box">
                         <small>Cart</small>
-                        <div className="cart-container"></div>
+                        
                     </div>
                 </Link>
             </div>
