@@ -9,10 +9,6 @@ const Header = () => {
                 <h1 className="logo">Rob Store</h1>
             </Link>
             <div className="header-boxes">
-                <div className="header-box">
-                    <small>Hello Guest</small>
-                    <p>Login</p>
-                </div>
                 <Link to="/cart">
                     <div className="header-box">
                         <small>Cart</small>
