@@ -17,7 +17,7 @@ const Home = () => {
                         title="DC TONIK SNEAKERS"
                         price={11.99}
                         size={43}
-                        rating={3}
+                        rating={4}
                         image={DcSneakers}
                     />
                     <Product

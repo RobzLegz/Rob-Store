@@ -28,6 +28,8 @@
   height: 100%;
   cursor: pointer;
   color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 .header-boxes :hover {
   background-color: rgb(51, 50, 50);
@@ -37,4 +39,11 @@
   width: 200px;
   margin-right: 50px;
   display: flex;
+}
+.carticon {
+  display: flex;
+  align-items: center;
+}
+.header-cart-count {
+  margin-left: 10px;
 }
