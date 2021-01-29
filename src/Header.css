@@ -6,21 +6,28 @@
   height: 60px;
   background-color: rgb(44, 43, 43);
   color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
 }
 .logo {
   font-family: "Hanalei", cursive;
   color: #fff;
   letter-spacing: 2px;
+  cursor: pointer;
+  margin-left: 100px;
 }
 .header-box {
   width: 100px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-left: 2px solid rgb(170, 116, 16);
-  border-right: 2px solid rgb(170, 116, 16);
-  border-bottom: 2px solid rgb(170, 116, 16);
   height: 100%;
+  cursor: pointer;
+}
+.header-boxes :hover {
+  background-color: rgb(51, 50, 50);
 }
 .header-boxes {
   height: 100%;
