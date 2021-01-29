@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(44, 43, 43);
+  color: #fff;
+}
+.logo {
+  font-family: "Hanalei", cursive;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.header-box {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-left: 2px solid rgb(170, 116, 16);
+  border-right: 2px solid rgb(170, 116, 16);
+  border-bottom: 2px solid rgb(170, 116, 16);
+  height: 100%;
+}
+.header-boxes {
+  height: 100%;
+  width: 200px;
+  margin-right: 50px;
+  display: flex;
+}
