@@ -14,15 +14,18 @@ const Checkout = () => {
             <div className="cart-left">
                 <img src={CartHeaderImg} alt="cart header image" className="cart-header-img"/>
                 <h2 className="cart-title">Your Shopping Cart</h2>
-                {basket.map(item => (
-                    <CartProduct 
-                        id={item.id}
-                        title={item.title}
-                        image={item.image}
-                        price={item.price}
-                        rating={item.rating}
-                    />
-                ))}
+                <div className="cart-left-products">
+                    {basket.map(item => (
+                        <CartProduct 
+                            id={item.id}
+                            title={item.title}
+                            image={item.image}
+                            price={item.price}
+                            size={item.size}
+                            rating={item.rating}
+                        />
+                    ))}
+                </div>
             </div>
             <div className="cart-right">
                 <Subtotal />
