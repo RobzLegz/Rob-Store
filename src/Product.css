@@ -8,6 +8,12 @@
   height: 350px;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
   background-color: #fff;
+  transition: all 0.3s ease;
+}
+.product-container:hover {
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  background-color: #fff;
 }
 .product-image {
   width: 200px;
@@ -30,6 +36,10 @@
   color: #fff;
   cursor: pointer;
   border: none;
+  transition: all 0.3s ease;
+}
+.cart-button-add:hover {
+  background: rgb(134, 49, 196);
 }
 .product-info {
   margin-top: 15px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Home.css";
 import Product from './Product';
-import HomeImage from "./resources/homeheaderimgcomerce.png";
+import HomeImage from "./resources/homeheaderimgcomerce.jpg";
 import AdidasSneakers from "./resources/FW6690_53be.jpg";
 import DcSneakers from "./resources/Tonik+Sneakers.jpg";
 import BlueVans from "./resources/vans-UA_Old_Skool-Nautical_Blue-1.jpg";
