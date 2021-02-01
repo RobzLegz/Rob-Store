@@ -8,6 +8,10 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
+}
+.cart-left::-webkit-scrollbar {
+  display: none;
 }
 .cart-header-img {
   width: 100%;
