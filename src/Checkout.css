@@ -23,7 +23,6 @@
 .allCheckoutProducts {
   width: 500px;
   height: fit-content;
-  cursor: pointer;
 }
 .linkToShop {
   text-decoration: none !important;
@@ -45,4 +44,5 @@
 }
 .linkToShop > button > .MuiSvgIcon-root {
   color: #fff !important;
+  cursor: pointer !important;
 }
