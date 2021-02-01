@@ -1,9 +1,25 @@
 .checkout-product-container {
-  width: 100%;
+  width: 500px;
   height: 100px;
   display: flex;
+  align-items: center;
+  position: relative;
 }
 .checkoutImage {
   height: 80px;
   width: 80px;
+  margin-left: 10px;
+}
+.checkout-product-info {
+  margin-left: 50px;
+}
+.checkout-product-container > .MuiSvgIcon-root {
+  position: absolute;
+  right: 50px;
+  font-size: 26px !important;
+  color: #d63a3a !important;
+  border: 1px solid #d63a3a;
+}
+.checkout-product-container:hover {
+  background-color: #c2c2c2;
 }

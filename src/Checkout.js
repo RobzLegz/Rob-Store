@@ -3,14 +3,16 @@ import "./Checkout.css";
 import CheckoutProduct from './CheckoutProduct';
 import { useStateValue } from './StateProvider';
 import Subtotal from './Subtotal';
+import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+import { Link } from 'react-router-dom';
 
 const Checkout = () => {
     const [{basket}, dispatch] = useStateValue();
 
     return (
         <div className="checkout-container">
+            <h2>Checkout</h2>
             <div className="checkoutProducts">
-                <h2 className="cart-title">Checkout</h2>
                 <div className="allCheckoutProducts">
                     {basket.map(item => (
                         <CheckoutProduct 
@@ -23,6 +25,9 @@ const Checkout = () => {
                     ))}
                 </div>
             </div>
+            <Link className="linkToShop" to="/">
+                <button><ShoppingCartOutlinedIcon />Continue Shopping</button>
+            </Link>
         </div>
     )
 }

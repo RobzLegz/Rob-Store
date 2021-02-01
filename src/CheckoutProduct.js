@@ -1,6 +1,7 @@
 import React from 'react';
 import "./CheckoutProduct.css";
 import { useStateValue } from './StateProvider';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const CheckoutProduct = ({id, title, price, rating, image, size}) => {
 
@@ -16,7 +17,7 @@ const CheckoutProduct = ({id, title, price, rating, image, size}) => {
     return (
         <div className="checkout-product-container">
             <img src={image} alt="cart image" className="checkoutImage"/>
-            <div className="cart-product-info">
+            <div className="checkout-product-info">
                 <p className="cart-product-title">{title}</p>
                 <div className="size-price-container-cart">
                     <p className="cart-product-price">
@@ -29,7 +30,7 @@ const CheckoutProduct = ({id, title, price, rating, image, size}) => {
                     </p>
                 </div>
             </div>
-            
+            <DeleteIcon onClick={removeBasketItem} />
         </div>
     )
 }
