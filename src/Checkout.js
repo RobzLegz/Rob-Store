@@ -5,10 +5,17 @@ import { useStateValue } from './StateProvider';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import { Link } from 'react-router-dom';
 import CheckoutTotal from './CheckoutTotal';
+import DoneIcon from '@material-ui/icons/Done';
 
 const Checkout = () => {
 
     const [{basket}, dispatch] = useStateValue();
+
+    const clearBasket = () => {
+        dispatch({
+            type: "CLEAR_BASKET",
+        })
+    }
 
     return (
         <div className="checkout-container">
@@ -27,7 +34,7 @@ const Checkout = () => {
                     ))}
                 </div>
             </div>
-            <button className="payButton">Order</button>
+            <button onClick={clearBasket} className="payButton"><DoneIcon />Order</button>
             <Link className="linkToShop" to="/">
                 <button><ShoppingCartOutlinedIcon />Continue Shopping</button>
             </Link>
