@@ -3,9 +3,9 @@ import "./Cart.css";
 import CartProduct from './CartProduct';
 import { useStateValue } from './StateProvider';
 import Subtotal from "./Subtotal";
-import CartHeaderImg from "./resources/grailify-wzgqLjz09jA-unsplash.jpg"
+import CartHeaderImg from "./resources/grailify-wzgqLjz09jA-unsplash.jpg";
 
-const Checkout = () => {
+const Cart = () => {
 
     const [{basket}, dispatch] = useStateValue();
 
@@ -34,4 +34,4 @@ const Checkout = () => {
     )
 }
 
-export default Checkout;
+export default Cart;

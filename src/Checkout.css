@@ -1,0 +1,15 @@
+.checkout-container {
+  width: 1000px;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-top: 100px;
+  overflow-y: hidden;
+}
+.checkoutProducts {
+  width: 300px;
+}
+.allCheckoutProducts {
+  width: 100%;
+  height: fit-content;
+}

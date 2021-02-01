@@ -1,0 +1,9 @@
+.checkout-product-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+.checkoutImage {
+  height: 80px;
+  width: 80px;
+}
