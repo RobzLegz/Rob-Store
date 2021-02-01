@@ -16,3 +16,9 @@
   justify-content: space-between;
   margin-bottom: 100px;
 }
+.home-container > h2 {
+  color: #444;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  margin-top: 10px;
+}

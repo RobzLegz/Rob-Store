@@ -11,6 +11,7 @@ const Home = () => {
         <div className="home">
             <div className="home-container">
                 <img src={HomeImage} alt="homeimage" className="home-background-image"/>
+                <h2>Used Clothes</h2>
                 <div className="product-row">
                     <Product
                         id="346463646"
@@ -40,6 +41,7 @@ const Home = () => {
                         stock={1}                     
                     />
                 </div>
+                <h2>Brand New</h2>
                 <div className="product-row">
                     <Product 
                         id="67463795439"
@@ -67,6 +69,64 @@ const Home = () => {
                         rating={5}
                         image="https://picture.bestsecret.com/static/images/1301/image_31722854_10_352x429_3.jpg"
                         stock={2}
+                    />
+                </div>
+                <div className="product-row">
+                    <Product 
+                        id="875487695"
+                        title="Brave Soul"
+                        price={20.99}
+                        size="M"
+                        rating={5}
+                        image="https://picture.bestsecret.com/static/images/1424/image_31903989_29_620x757_0.jpg"
+                        stock={10}
+                    />
+                    <Product 
+                        id="239643454"
+                        title="Brave Soul"
+                        price={20.99}
+                        size="M"
+                        rating={4}
+                        image="https://picture.bestsecret.com/static/images/1425/image_31903989_81_620x757_0.jpg"
+                        stock={10}
+                    />
+                    <Product 
+                        id="12094365"
+                        title="Ellesse"
+                        price={20}
+                        size="M"
+                        rating={4}
+                        image="https://picture.bestsecret.com/static/images/1417/image_31904350_20_620x757_0.jpg"
+                        stock={10}
+                    />
+                </div>
+                <div className="product-row">
+                    <Product 
+                        id="956403457"
+                        title="Happy Socks"
+                        price={15.99}
+                        size="EU 41-46"
+                        rating={5}
+                        image="https://picture.bestsecret.com/static/images/1424/image_31892839_10_620x757_0.jpg"
+                        stock={10}
+                    />
+                    <Product 
+                        id="0978372455320"
+                        title="Happy Socks"
+                        price={15.99}
+                        size="EU 36-40"
+                        rating={5}
+                        image="https://picture.bestsecret.com/static/images/1415/image_31106883_40_620x757_0.jpg"
+                        stock={10}
+                    />
+                    <Product 
+                        id="00000002783284"
+                        title="Happy Socks"
+                        price={15.99}
+                        size="EU 36-40"
+                        rating={5}
+                        image="https://picture.bestsecret.com/static/images/679/image_30966566_30_620x757_0.jpg"
+                        stock={10}
                     />
                 </div>
             </div>
