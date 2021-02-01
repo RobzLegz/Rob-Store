@@ -2,11 +2,16 @@ import React from 'react';
 import "./Product.css";
 import { useStateValue } from './StateProvider';
 
-const Product = ({id, title, price, rating, image, size}) => {
+const Product = ({id, title, price, rating, image, size, stock}) => {
 
     const [{basket}, dispatch] = useStateValue();
 
     const addToCart = () => {
+        const fullProduct = document.querySelector(".product-container");
+        stock --;
+        if(stock <= 0){
+            fullProduct.classList.add("outOfStock");
+        }
         dispatch({
             type: "ADD_TO_BASKET",
             item: {
@@ -16,6 +21,7 @@ const Product = ({id, title, price, rating, image, size}) => {
                 price: price,
                 rating: rating,
                 size: size,
+                stock: stock,
             },
         });
     }

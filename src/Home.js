@@ -19,6 +19,7 @@ const Home = () => {
                         size={43}
                         rating={4}
                         image={DcSneakers}
+                        stock={1}
                     />
                     <Product
                         id="64436564"
@@ -26,7 +27,8 @@ const Home = () => {
                         price={19.99}
                         size={44}
                         rating={3}
-                        image={AdidasSneakers}
+                        image={AdidasSneakers}   
+                        stock={1}                     
                     />
                     <Product
                         id="2733786438"
@@ -34,7 +36,37 @@ const Home = () => {
                         price={5.00}
                         size={43}
                         rating={1}
-                        image={BlueVans}
+                        image={BlueVans}  
+                        stock={1}                     
+                    />
+                </div>
+                <div className="product-row">
+                    <Product 
+                        id="67463795439"
+                        title="Adidas Originals"
+                        price={100}
+                        size={44}
+                        rating={5}
+                        image="https://picture.bestsecret.com/static/images/1307/image_31698055_10_352x429_3.jpg"
+                        stock={2}
+                    />
+                    <Product 
+                        id="6748979876595439"
+                        title="Adidas Originals"
+                        price={100}
+                        size={44}
+                        rating={5}
+                        image="https://picture.bestsecret.com/static/images/1280/image_31751991_10_620x757_0.jpg"
+                        stock={2}
+                    />
+                    <Product 
+                        id="671235439"
+                        title="Adidas Originals"
+                        price={120}
+                        size={45}
+                        rating={5}
+                        image="https://picture.bestsecret.com/static/images/1301/image_31722854_10_352x429_3.jpg"
+                        stock={2}
                     />
                 </div>
             </div>
